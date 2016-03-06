@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pnX-ee-sYo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3s2-7G-CFD">
+            <objects>
+                <navigationController id="pnX-ee-sYo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HOd-ji-jhk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nag-6y-wst"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6z-nP-02K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510" y="-65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SWMessagesExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7j-a5-FnY">
+                                <rect key="frame" x="283" y="89" width="34" height="30"/>
+                                <state key="normal" title="Error"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="82" width="34" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsN-P4-tpd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOb-BJ-spy">
+                                <rect key="frame" x="272" y="132" width="57" height="30"/>
+                                <state key="normal" title="Warning"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="125" width="57" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapWarning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clM-kY-kLh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9p-a3-Yj4">
+                                <rect key="frame" x="269" y="170" width="62" height="30"/>
+                                <state key="normal" title="Message"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="55" y="163" width="62" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RgL-2Y-gdi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0V-jD-zxm">
+                                <rect key="frame" x="271" y="208" width="58" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="57" y="201" width="58" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OhH-p8-N5x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olk-cX-E43">
+                                <rect key="frame" x="259" y="253" width="82" height="30"/>
+                                <state key="normal" title="With Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="246" width="82" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kQ-We-wPt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCw-Bc-eqp">
+                                <rect key="frame" x="246" y="346" width="109" height="30"/>
+                                <state key="normal" title="Infinite Duration"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="101" y="354" width="109" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapInfinite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xl8-re-dPC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISG-6D-9KM">
+                                <rect key="frame" x="251" y="396" width="100" height="30"/>
+                                <state key="normal" title="Long Message"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="106" y="404" width="100" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapLongMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m70-TR-lTZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lba-tK-WYQ">
+                                <rect key="frame" x="272" y="450" width="59" height="30"/>
+                                <state key="normal" title="Tap Text"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="127" y="458" width="59" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgl-ty-wsG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWs-lP-dDm">
+                                <rect key="frame" x="249" y="495" width="105" height="30"/>
+                                <state key="normal" title="Custom Design"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="249" y="295" width="105" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapCustomDesign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HB-hA-Q9K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whh-lX-gpv">
+                                <rect key="frame" x="276" y="533" width="51" height="30"/>
+                                <state key="normal" title="Bottom"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="276" y="333" width="51" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapNavHidden:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YkJ-M9-149"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vip-8u-QhV">
+                                <rect key="frame" x="95" y="89" width="75" height="30"/>
+                                <state key="normal" title="Toggle nav"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="193" y="100" width="75" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapToggleNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJv-bt-uEi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEI-VV-2Dr">
+                                <rect key="frame" x="66" y="132" width="119" height="30"/>
+                                <state key="normal" title="Toggle Nav alpha"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="143" width="119" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapNavAlpha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UhA-fe-gPR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-w5-RHO">
+                                <rect key="frame" x="59" y="170" width="118" height="30"/>
+                                <state key="normal" title="Toggle fullscreen"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="157" y="181" width="118" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapToggleFullscreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ccv-CC-STy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVR-V7-beB">
+                                <rect key="frame" x="245" y="299" width="110" height="30"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="1" green="0.05057200585306787" blue="0.098806510944434933" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="278" width="54" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnB-mQ-kt7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yvS-00-teL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-79"/>
+        </scene>
+    </scenes>
+</document>
